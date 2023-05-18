@@ -6,5 +6,8 @@ class task{
     this.priority=priority
   }
   
-
 }
+
+export{task}
+
+
