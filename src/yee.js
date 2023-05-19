@@ -4,9 +4,18 @@ class task{
     this.description=description
     this.dueDate=dueDate
     this.priority=priority
+    }
+
+    
+
+
+
+    add(){
+      
+    }
   }
   
-}
+
 
 export{task}
 
