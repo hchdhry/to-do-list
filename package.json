@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
     "build": "webpack"
   },
   "repository": {
@@ -19,7 +20,9 @@
   },
   "homepage": "https://github.com/hchdhry/to-do-list#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.1",
     "webpack": "^5.82.1",
-    "webpack-cli": "^5.1.1"
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
   }
 }
