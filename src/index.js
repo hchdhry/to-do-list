@@ -1,9 +1,9 @@
 import { task } from "./yee"
 import make from "./array"
 
-console.log("hdssad32egsdcbchw")
+const array=[]
+function add(entry){
+    array.push(entry)
+}
 
-const gym = new task ("dscds","dcdsc","wdcdsc","dscsdc")
-console.log(gym)
 
-task.populate(gym)

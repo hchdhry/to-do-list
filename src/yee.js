@@ -3,21 +3,10 @@ class task{
     this.title=title
     this.description=description
     this.dueDate=dueDate
-    this.priority=priority
-    this.list=[]
-    
+    this.priority=priority 
     }
-populate(value){
-  this.list.push(value)
-}
     
   }
-
-
-  
-  
-
-
 export{task}
 
 
