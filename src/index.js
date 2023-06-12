@@ -5,7 +5,12 @@ const button=document.querySelector("button")
 
 button.addEventListener("click",function(event){
     event.preventDefault();
-    ddval= d
+    const title = document.getElementById('title').value;
+    const description = document.getElementById('description').value;
+    const dueDate = document.getElementById('due date').value;
+    const priority = document.getElementById('priority').value;
+    const yee =new task(title,description,dueDate,priority)
+    console.log(yee)
 }
 
 )
