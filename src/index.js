@@ -10,14 +10,23 @@ button.addEventListener("click",function(event){
     const dueDate = document.getElementById('due date').value;
     const priority = document.getElementById('priority').value;
     const yee =new task(title,description,dueDate,priority)
-    console.log(yee)
-}
-
-)
+    array.push(yee)
+   
+})
 
 const array=[];
-function add(entry){
-    array.push(entry)
-}
 
+for(i=0;i>array.length;i++){
+    row=document.createElement('tr')
+    tcell=document.createElement('td')
+    dcell=document.createElement('td')
+    ucell=document.createElement('td')
+    pcell=document.createElement('td')
+    
+    
+   row.classlist.add("row")
+
+
+
+}
 
