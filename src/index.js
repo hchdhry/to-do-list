@@ -4,22 +4,24 @@ import make from "./array"
 const button=document.querySelector("button")
 const project= document.getElementById("project-list")
 
+
+
+
 const array=[];
 button.addEventListener("click",function(event){
     event.preventDefault();
-    const title = document.getElementById('title').value;
-    const description = document.getElementById('description').value;
-    const dueDate = document.getElementById('due date').value;
-    const priority = document.getElementById('priority').value;
+const title = document.getElementById('title').value;
+const description = document.getElementById('description').value;
+const dueDate = document.getElementById('due date').value;
+const priority = document.getElementById('priority').value;
     const yee =new task(title,description,dueDate,priority)
     array.push(yee)
-    console.log(array[2])
     createtask()
    
 })
-
+var i;
 function createtask(){
-    for(let i=0;i<1;i++){
+    for(let i=array.length-1;i<array.length;i++){
         var activity=array[i];
         console.log(activity);
        
@@ -35,17 +37,27 @@ function createtask(){
         row.appendChild(dcell);
         row.appendChild(ucell);
         row.appendChild(pcell);
-    
-        tcell.textContent=activity.title;
-        dcell.textContent=activity.description;
-        ucell.textContent=activity.dueDate;
-        pcell.textContent=activity.priority;
+
+        localStorage.setItem(`title${i}`,activity.title);
+        localStorage.setItem(`description${i}`,activity.description);
+        localStorage.setItem(`due date${i}`,activity.dueDate);
+        localStorage.setItem(`priority${i}`,activity.priority);
+
+        function display(){
+            tcell.textContent=localStorage.getItem(`title${i}`);
+            dcell.textContent=localStorage.getItem(`description${i}`);
+            ucell.textContent=localStorage.getItem(`due date${i}`);
+            pcell.textContent=localStorage.getItem(`priority${i}`);
+        }
+        display()
+        
         
     
     
     
     
     }}
+  
 
 
 
