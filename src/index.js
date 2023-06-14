@@ -19,7 +19,7 @@ button.addEventListener("click",function(event){
 })
 
 function createtask(){
-    for(let i=0;i<=array.length;i++){
+    for(let i=0;i<1;i++){
         var activity=array[i];
         console.log(activity);
        
